@@ -1,0 +1,16 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.example.calltimerhook'
+    compileSdk 33
+    defaultConfig {
+        applicationId "com.example.calltimerhook"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes { release { minifyEnabled false } }
+}
+dependencies {
+    implementation 'de.robv.android.xposed:api:82'
+}
